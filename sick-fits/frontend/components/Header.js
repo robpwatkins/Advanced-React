@@ -5,13 +5,13 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 
 Router.onRouteChangeStart = () => {
-  console.log('onRouteChangeStart Triggered')
+  NProgress.start();
 }
 Router.onRouteChangeComplete = () => {
-  console.log('onRouteChangeComplete Triggered')
+  NProgress.done();
 }
 Router.onRouteChangeError = () => {
-  console.log('onRouteChangeError Triggered')
+  NProgress.done();
 }
 
 const Logo = styled.h1`
