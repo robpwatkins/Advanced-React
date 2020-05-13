@@ -1,14 +1,14 @@
 type User {
-  id: ID! @id
+  id: ID! @id @unique
   name: String!
   email: String!
 }
 
 type Item {
-  id: ID! @id
+  id: ID! @id @unique
   title: String! 
   description: String!
   image: String 
   largeImage: String 
-  price: Int! 
+  price: Int!
 }
