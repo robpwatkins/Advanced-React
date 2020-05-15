@@ -10,7 +10,7 @@ class MyApp extends App {
       pageProps = await Component.getInitialProps(ctx);
     }
     pageProps.query = ctx.query;
-    return pageProps;
+    return { pageProps };
   }
   render() {
     const { Component, apollo, pageProps } = this.props;
